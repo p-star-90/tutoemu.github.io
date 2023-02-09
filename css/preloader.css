@@ -1,0 +1,38 @@
+.loader {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-width: 50px;
+    border-style: double;
+    border-color: transparent;
+    border-right-color: transparent;
+    border-right-color: #3f52cc;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: spin 1s infinite;
+    animation-delay: -0.25s;
+}
+
+.loader:after {
+    left: 0;
+    border-right-color: transparent;
+    border-left-color: #3f52cc;
+    animation: spin 1s infinite;
+    animation-delay: 0;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+}

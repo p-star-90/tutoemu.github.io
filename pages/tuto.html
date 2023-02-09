@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.72.0">
+    <title>Tuto</title>
+    <link rel="icon" type="image/x-icon" href="/img/Logo-for-Tuto-Emu.png">
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/dashboard/">
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6451224495941635"
+        crossorigin="anonymous">
+    </script>
+    <script src="/js/Chat.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GB2PNZ4WGT"></script>
+
+</head>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GB2PNZ4WGT');
+</script>
+
+<body>
+
+    <header id="haut">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html"><img height="30" width="30"
+                        src="/img/Logo-for-Tuto-Emu.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/tuto.html">Tutoriel</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/resource.html">Resource</a>
+                        </li>
+
+                        <li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Communauté </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.reddit.com/r/TutoEmu/" target="_blank">
+                                        Reddit </a></li>
+                                <li><a class="dropdown-item" href="https://tutoemu.forumactif.com"> Forum </a></li>
+                                <li><a class="dropdown-item" href="https://discord.gg/PMCKug93PC"> Discord </a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Votre avis</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="tuto.html#Acceuil">
+                                <span data-feather="home"></span>
+                                Acceuil Tuto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tuto.html#CEMU">
+                                <span data-feather="file"></span>
+                                CEMU
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="nav-link" href="/pages/tuto.html#Commencement">Commencement</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="/pages/tuto.html#Installation">Installation</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="/pages/tuto.html#USB_Helper">USB Helper Tool</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="/pages/tuto.html#Config">Configuration CEMU</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="/pages/tuto.html#Config_CEMU_Hook">Configuration CEMU
+                                        Hook</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="/pages/tuto.html#Config_Manette">Configuration Manette</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="/pages/tuto.html#Update">Mise a jour d'un jeu</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="/pages/tuto.html#DLC">Installer un DLC</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tuto.html#Yuzu">
+                                <span data-feather="shopping-cart"></span>
+                                Yuzu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tuto.html#RetroArch">
+                                <span data-feather="users"></span>
+                                RetroArch
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main id="Acceuil" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Acceuil Tuto</h1>
+                </div>
+
+                <center>
+                    <h1>Bienvenu sur la page des les tutoriel</h1>
+                    <br><br>
+                    <h1>Ici vous trouverez tout les tutoriel</h1>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1 id="CEMU">CEMU</h1>
+                    <br><br><br>
+                    <img class="img-fluid" src="/img/CEMU_banniere.png" alt="Banniere pour CEMU">
+                    <div id="Commencement"></div>
+                    <br><br><br>
+                    <h2>
+                        <p>1. Telecharger les resource
+                            <p><a href="/pages/resource.html#CEMU" target="_blank">ICI</a>
+                                <p>2. Extraire CEMU dans un dossier de votre choix
+                                    <p><img class="img-fluid" src="/img/image-tuto-cemu-extraction.png" alt="">
+                                        <p>3. Extraire cemuhook dans un dossier de CEMU et ouvrez Cemu.exe
+                                            <p><img class="img-fluid" src="/img/image-tuto-cemu-extraction-cemuhook.png"
+                                                    alt="">
+                                                <p id="Installation">4. (optionnel) Vous pouvez choisir ou CEMU va
+                                                    stocker le coeur de la
+                                                    console
+                                                    <p><img class="img-fluid" src="/img/tuto-cemu-mlc.png" alt="">
+                                                        <p>5. Vous devez choisir ou CEMU va chercher les jeux
+                                                            <p><img class="img-fluid" src="/img/tuto-cemu-game-path.png"
+                                                                    alt="">
+                                                                <p>6. Vous devez télécharger les pack graphique de la
+                                                                    communauté
+                                                                    <p><img class="img-fluid"
+                                                                            src="/img/tuto-cemu-pack-graphique.png"
+                                                                            alt="">
+                                                                        <p>7. Vous devez cocher la case "chercher
+                                                                            automatiquement les mise a jour"
+                                                                            <p><img class="img-fluid"
+                                                                                    src="/img/tuto-cemu-mise-a-jour.png"
+                                                                                    alt="">
+                                                                                <p>8. (optionnel) Vous pouvez cocher la
+                                                                                    case "Demmarer les jeux en mode
+                                                                                    plain écran"
+                                                                                    <p><img class="img-fluid"
+                                                                                            src="/img/tuto-cemu-fullscreen.png"
+                                                                                            alt="">
+                                                                                        <p>9. Vous devez cliquer sur
+                                                                                            "close"<p>
+                                                                                                <p id="USB_Helper">10.
+                                                                                                    Installer USB
+                                                                                                    helper
+                                                                                                    <p>Cliquer sur next
+                                                                                                        chaque fois
+                                                                                                        jusqu'a pouvoir
+                                                                                                        choisire le
+                                                                                                        version et
+                                                                                                        choisisez
+                                                                                                        "0.6.1.655"
+                                                                                                        <p><img class="img-fluid"
+                                                                                                                src="/img/tuto-ubs-helper-version.png"
+                                                                                                                alt="">
+                                                                                                            <p>11.(optionnel)
+                                                                                                                cliquer
+                                                                                                                sur
+                                                                                                                "browse"
+                                                                                                                pour
+                                                                                                                choisir
+                                                                                                                l'emplacement
+                                                                                                                de USB
+                                                                                                                Helper
+                                                                                                                <p><img class="img-fluid"
+                                                                                                                        src="/img/tuto-ubs-helper-chemin.png"
+                                                                                                                        alt="">
+                                                                                                                    <p>12.
+                                                                                                                        cliquer
+                                                                                                                        sur
+                                                                                                                        "install"
+                                                                                                                        pour
+                                                                                                                        installer
+                                                                                                                        USB
+                                                                                                                        Helper
+                                                                                                                        puis
+                                                                                                                        ouvrez
+                                                                                                                        le
+                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                src="/img/tuto-ubs-helper-install.png"
+                                                                                                                                alt="">
+                                                                                                                            <p>13.
+                                                                                                                                Accepter
+                                                                                                                                les
+                                                                                                                                CGU
+                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                        src="/img/tuto-ubs-helper-eula.png"
+                                                                                                                                        alt="">
+                                                                                                                                    <p>14.
+                                                                                                                                        Choisir
+                                                                                                                                        une
+                                                                                                                                        region
+                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                src="/img/tuto-ubs-helper-region.png"
+                                                                                                                                                alt="">
+                                                                                                                                            <p>15.
+                                                                                                                                                Accepter
+                                                                                                                                                le
+                                                                                                                                                "Disclaimer"
+                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                        src="/img/tuto-ubs-helper-disclaimer.png"
+                                                                                                                                                        alt="">
+                                                                                                                                                    <p>16.
+                                                                                                                                                        Cliquer
+                                                                                                                                                        sur
+                                                                                                                                                        "OK"
+                                                                                                                                                        et
+                                                                                                                                                        choisiser
+                                                                                                                                                        ou
+                                                                                                                                                        mettre
+                                                                                                                                                        vos
+                                                                                                                                                        jeux
+                                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                                src="/img/tuto-ubs-helper-game-path.png"
+                                                                                                                                                                alt="">
+                                                                                                                                                            <p>17.
+                                                                                                                                                                Copier
+                                                                                                                                                                l'une
+                                                                                                                                                                des
+                                                                                                                                                                clé
+                                                                                                                                                                qui
+                                                                                                                                                                se
+                                                                                                                                                                trouve
+                                                                                                                                                                dans
+                                                                                                                                                                les
+                                                                                                                                                                <a href="/pages/resource.html"
+                                                                                                                                                                    target="_blank">resource</a>
+                                                                                                                                                                et
+                                                                                                                                                                collez
+                                                                                                                                                                la
+                                                                                                                                                                dans
+                                                                                                                                                                l'espace
+                                                                                                                                                                prevu
+                                                                                                                                                                a
+                                                                                                                                                                cet
+                                                                                                                                                                effet
+                                                                                                                                                                puis
+                                                                                                                                                                cliquer
+                                                                                                                                                                sur
+                                                                                                                                                                "OK"
+                                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                                        src="/img/tuto-ubs-helper-key.png"
+                                                                                                                                                                        alt="">
+                                                                                                                                                                    <p>18.
+                                                                                                                                                                        Allez
+                                                                                                                                                                        dans
+                                                                                                                                                                        filtre
+                                                                                                                                                                        puis
+                                                                                                                                                                        decocher
+                                                                                                                                                                        toutes
+                                                                                                                                                                        les
+                                                                                                                                                                        case
+                                                                                                                                                                        sauf
+                                                                                                                                                                        celle
+                                                                                                                                                                        sur
+                                                                                                                                                                        l'image
+                                                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                                                src="/img/tuto-ubs-helper-filtre.png"
+                                                                                                                                                                                alt="">
+                                                                                                                                                                            <p>19.
+                                                                                                                                                                                Retournez
+                                                                                                                                                                                dans
+                                                                                                                                                                                "Bibliotheque"
+                                                                                                                                                                                puis
+                                                                                                                                                                                cherchez
+                                                                                                                                                                                votre
+                                                                                                                                                                                jeux
+                                                                                                                                                                                et
+                                                                                                                                                                                faite
+                                                                                                                                                                                clique
+                                                                                                                                                                                droit
+                                                                                                                                                                                sur
+                                                                                                                                                                                le
+                                                                                                                                                                                jeux
+                                                                                                                                                                                et
+                                                                                                                                                                                cliquez
+                                                                                                                                                                                sur
+                                                                                                                                                                                "Télécharger
+                                                                                                                                                                                le(s)
+                                                                                                                                                                                jeu(x)"
+                                                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                                                        src="/img/tuto-ubs-helper-download.png"
+                                                                                                                                                                                        alt="">
+                                                                                                                                                                                    <p>20.
+                                                                                                                                                                                        (Optionnel
+                                                                                                                                                                                        mais
+                                                                                                                                                                                        très
+                                                                                                                                                                                        vivement
+                                                                                                                                                                                        conseillé)
+                                                                                                                                                                                        Cliquer
+                                                                                                                                                                                        sur
+                                                                                                                                                                                        "OK"
+                                                                                                                                                                                        pour
+                                                                                                                                                                                        telecharger
+                                                                                                                                                                                        la
+                                                                                                                                                                                        derniere
+                                                                                                                                                                                        mise
+                                                                                                                                                                                        a
+                                                                                                                                                                                        jour
+                                                                                                                                                                                        de
+                                                                                                                                                                                        jeux
+                                                                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                                                                src="/img/tuto-ubs-helper-download-yes.png"
+                                                                                                                                                                                                alt="">
+                                                                                                                                                                                            <p>21.
+                                                                                                                                                                                                (Optionnel)
+                                                                                                                                                                                                Cliquer
+                                                                                                                                                                                                sur
+                                                                                                                                                                                                "OK"
+                                                                                                                                                                                                pour
+                                                                                                                                                                                                télécharger
+                                                                                                                                                                                                les
+                                                                                                                                                                                                DLC
+                                                                                                                                                                                                (il
+                                                                                                                                                                                                y
+                                                                                                                                                                                                sont
+                                                                                                                                                                                                tous)
+                                                                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                                                                        src="/img/tuto-ubs-helper-dlc.png"
+                                                                                                                                                                                                        alt="">
+                                                                                                                                                                                                    <p>22.
+                                                                                                                                                                                                        Cliquer
+                                                                                                                                                                                                        sur
+                                                                                                                                                                                                        "Télécharger
+                                                                                                                                                                                                        le(s)
+                                                                                                                                                                                                        jeu(x)
+                                                                                                                                                                                                        en
+                                                                                                                                                                                                        bas"
+                                                                                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                                                                                src="/img/tuto-ubs-helper-download-final.png"
+                                                                                                                                                                                                                alt="">
+                                                                                                                                                                                                            <p>23.
+                                                                                                                                                                                                                Très
+                                                                                                                                                                                                                important
+                                                                                                                                                                                                                :
+                                                                                                                                                                                                                Cliquer
+                                                                                                                                                                                                                sur
+                                                                                                                                                                                                                "Décompress"
+                                                                                                                                                                                                                (on
+                                                                                                                                                                                                                le
+                                                                                                                                                                                                                voit
+                                                                                                                                                                                                                mieux
+                                                                                                                                                                                                                quand
+                                                                                                                                                                                                                USB
+                                                                                                                                                                                                                Helper
+                                                                                                                                                                                                                est
+                                                                                                                                                                                                                en
+                                                                                                                                                                                                                plein
+                                                                                                                                                                                                                écran)
+                                                                                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                                                                                        src="/img/tuto-ubs-helper-decompress.png"
+                                                                                                                                                                                                                        alt="">
+                                                                                                                                                                                                                    <p
+                                                                                                                                                                                                                        id="Config">
+                                                                                                                                                                                                                        24.
+                                                                                                                                                                                                                        (optionnel)
+                                                                                                                                                                                                                        Dans
+                                                                                                                                                                                                                        CEMU,
+                                                                                                                                                                                                                        dans
+                                                                                                                                                                                                                        option,
+                                                                                                                                                                                                                        dans
+                                                                                                                                                                                                                        general,
+                                                                                                                                                                                                                        general
+                                                                                                                                                                                                                        :
+                                                                                                                                                                                                                        vous
+                                                                                                                                                                                                                        pouvez
+                                                                                                                                                                                                                        choisir
+                                                                                                                                                                                                                        une
+                                                                                                                                                                                                                        langue
+                                                                                                                                                                                                                        (vous
+                                                                                                                                                                                                                        devez
+                                                                                                                                                                                                                        redemarer
+                                                                                                                                                                                                                        CEMU
+                                                                                                                                                                                                                        pour
+                                                                                                                                                                                                                        voir
+                                                                                                                                                                                                                        votre
+                                                                                                                                                                                                                        laungue
+                                                                                                                                                                                                                        être
+                                                                                                                                                                                                                        appliqué)
+                                                                                                                                                                                                                        ici
+                                                                                                                                                                                                                        dans
+                                                                                                                                                                                                                        ce
+                                                                                                                                                                                                                        tutoriel,
+                                                                                                                                                                                                                        les
+                                                                                                                                                                                                                        oprion
+                                                                                                                                                                                                                        seront
+                                                                                                                                                                                                                        expliqué
+                                                                                                                                                                                                                        en
+                                                                                                                                                                                                                        français
+                                                                                                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                                                                                                src="/img/tuto-cemu-langue.png"
+                                                                                                                                                                                                                                alt="">
+                                                                                                                                                                                                                            <p>25.
+                                                                                                                                                                                                                                Toujours
+                                                                                                                                                                                                                                dans
+                                                                                                                                                                                                                                les
+                                                                                                                                                                                                                                parametre,
+                                                                                                                                                                                                                                dans
+                                                                                                                                                                                                                                graphisme
+                                                                                                                                                                                                                                (dans
+                                                                                                                                                                                                                                l'image
+                                                                                                                                                                                                                                "Graphics")
+                                                                                                                                                                                                                                :
+                                                                                                                                                                                                                                choisir
+                                                                                                                                                                                                                                OpenGL
+                                                                                                                                                                                                                                sir
+                                                                                                                                                                                                                                vous
+                                                                                                                                                                                                                                possedez
+                                                                                                                                                                                                                                une
+                                                                                                                                                                                                                                carte
+                                                                                                                                                                                                                                graphique
+                                                                                                                                                                                                                                Nvidia
+                                                                                                                                                                                                                                sinon
+                                                                                                                                                                                                                                choisir
+                                                                                                                                                                                                                                Vulkan
+                                                                                                                                                                                                                                si
+                                                                                                                                                                                                                                vous
+                                                                                                                                                                                                                                avez
+                                                                                                                                                                                                                                une
+                                                                                                                                                                                                                                carte
+                                                                                                                                                                                                                                graphique
+                                                                                                                                                                                                                                AMD
+                                                                                                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                                                                                                        src="/img/tuto-cemu-carte-graphique.png"
+                                                                                                                                                                                                                                        alt="">
+                                                                                                                                                                                                                                    <p>26.
+                                                                                                                                                                                                                                        Toujour
+                                                                                                                                                                                                                                        au
+                                                                                                                                                                                                                                        même
+                                                                                                                                                                                                                                        endroit
+                                                                                                                                                                                                                                        :
+                                                                                                                                                                                                                                        choisir
+                                                                                                                                                                                                                                        "Bilineair"
+                                                                                                                                                                                                                                        (dans
+                                                                                                                                                                                                                                        l'image
+                                                                                                                                                                                                                                        "Bilinear")
+                                                                                                                                                                                                                                        dans
+                                                                                                                                                                                                                                        "Filtre
+                                                                                                                                                                                                                                        d'agrandissment
+                                                                                                                                                                                                                                        (upscale)"
+                                                                                                                                                                                                                                        (dans
+                                                                                                                                                                                                                                        l'image
+                                                                                                                                                                                                                                        "Upscale
+                                                                                                                                                                                                                                        filter")
+                                                                                                                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                                                                                                                src="/img/tuto-cemu-bilinear.png"
+                                                                                                                                                                                                                                                alt="">
+                                                                                                                                                                                                                                            <p>27.
+                                                                                                                                                                                                                                                Dans
+                                                                                                                                                                                                                                                audio
+                                                                                                                                                                                                                                                choisir
+                                                                                                                                                                                                                                                dans
+                                                                                                                                                                                                                                                moteur
+                                                                                                                                                                                                                                                "XAudio2".
+                                                                                                                                                                                                                                                Vous
+                                                                                                                                                                                                                                                pouvez
+                                                                                                                                                                                                                                                mettre
+                                                                                                                                                                                                                                                une
+                                                                                                                                                                                                                                                latence
+                                                                                                                                                                                                                                                si
+                                                                                                                                                                                                                                                le
+                                                                                                                                                                                                                                                son
+                                                                                                                                                                                                                                                du
+                                                                                                                                                                                                                                                jeux
+                                                                                                                                                                                                                                                bug
+                                                                                                                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                                                                                                                        src="/img/tuto-cemu-audio.png"
+                                                                                                                                                                                                                                                        alt="">
+                                                                                                                                                                                                                                                </p>
+                                                                                                                                                                                                                                                <p>28.
+                                                                                                                                                                                                                                                    (Optionnel)
+                                                                                                                                                                                                                                                    vous
+                                                                                                                                                                                                                                                    pouvez
+                                                                                                                                                                                                                                                    modifier
+                                                                                                                                                                                                                                                    les
+                                                                                                                                                                                                                                                    paramettre
+                                                                                                                                                                                                                                                    "Overlay"
+                                                                                                                                                                                                                                                    et
+                                                                                                                                                                                                                                                    "Compte"
+                                                                                                                                                                                                                                                    <p
+                                                                                                                                                                                                                                                        id="Config_CEMU_Hook">
+                                                                                                                                                                                                                                                        29.
+                                                                                                                                                                                                                                                        Dans
+                                                                                                                                                                                                                                                        la
+                                                                                                                                                                                                                                                        barre
+                                                                                                                                                                                                                                                        de
+                                                                                                                                                                                                                                                        navigation,
+                                                                                                                                                                                                                                                        CPU,
+                                                                                                                                                                                                                                                        Affinity
+                                                                                                                                                                                                                                                        mettre
+                                                                                                                                                                                                                                                        "All
+                                                                                                                                                                                                                                                        logical
+                                                                                                                                                                                                                                                        cores".
+                                                                                                                                                                                                                                                        Normalement
+                                                                                                                                                                                                                                                        c'est
+                                                                                                                                                                                                                                                        deja
+                                                                                                                                                                                                                                                        coché
+                                                                                                                                                                                                                                                        mais
+                                                                                                                                                                                                                                                        verifiez
+                                                                                                                                                                                                                                                        quand
+                                                                                                                                                                                                                                                        même
+                                                                                                                                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                                                                                                                                src="/img/tuto-cemu-cores.png"
+                                                                                                                                                                                                                                                                alt="">
+                                                                                                                                                                                                                                                            <p>30.
+                                                                                                                                                                                                                                                                Dans
+                                                                                                                                                                                                                                                                la
+                                                                                                                                                                                                                                                                barre
+                                                                                                                                                                                                                                                                de
+                                                                                                                                                                                                                                                                navigation,
+                                                                                                                                                                                                                                                                Debug,
+                                                                                                                                                                                                                                                                Custom
+                                                                                                                                                                                                                                                                Timer
+                                                                                                                                                                                                                                                                mettre
+                                                                                                                                                                                                                                                                "QPC"
+                                                                                                                                                                                                                                                                et
+                                                                                                                                                                                                                                                                "1x
+                                                                                                                                                                                                                                                                speed".
+                                                                                                                                                                                                                                                                "1x
+                                                                                                                                                                                                                                                                speed
+                                                                                                                                                                                                                                                                "est
+                                                                                                                                                                                                                                                                deja
+                                                                                                                                                                                                                                                                coché
+                                                                                                                                                                                                                                                                mais
+                                                                                                                                                                                                                                                                verifiez
+                                                                                                                                                                                                                                                                quand
+                                                                                                                                                                                                                                                                même
+                                                                                                                                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                                                                                                                                        src="/img/image-tuto-cemu-timer.png"
+                                                                                                                                                                                                                                                                        alt="">
+                                                                                                                                                                                                                                                                    <p>31.
+                                                                                                                                                                                                                                                                        Dans
+                                                                                                                                                                                                                                                                        la
+                                                                                                                                                                                                                                                                        barre
+                                                                                                                                                                                                                                                                        de
+                                                                                                                                                                                                                                                                        navigation,
+                                                                                                                                                                                                                                                                        Debug,
+                                                                                                                                                                                                                                                                        MM
+                                                                                                                                                                                                                                                                        Timer
+                                                                                                                                                                                                                                                                        Accuracy
+                                                                                                                                                                                                                                                                        mettre
+                                                                                                                                                                                                                                                                        "1
+                                                                                                                                                                                                                                                                        ms"
+                                                                                                                                                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                                                                                                                                                src="/img/tuto-cemu-1ms.png"
+                                                                                                                                                                                                                                                                                alt="">
+                                                                                                                                                                                                                                                                            <p>32.
+                                                                                                                                                                                                                                                                                Dans
+                                                                                                                                                                                                                                                                                la
+                                                                                                                                                                                                                                                                                barre
+                                                                                                                                                                                                                                                                                de
+                                                                                                                                                                                                                                                                                navigation,
+                                                                                                                                                                                                                                                                                Debug,
+                                                                                                                                                                                                                                                                                mettre
+                                                                                                                                                                                                                                                                                "Use
+                                                                                                                                                                                                                                                                                Cemuhook
+                                                                                                                                                                                                                                                                                H264"
+                                                                                                                                                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                                                                                                                                                        src="/img/tuto-cemu-h264.png"
+                                                                                                                                                                                                                                                                                        alt="">
+                                                                                                                                                                                                                                                                                    <p
+                                                                                                                                                                                                                                                                                        id="Config_Manette">
+                                                                                                                                                                                                                                                                                        33.
+                                                                                                                                                                                                                                                                                        Dans
+                                                                                                                                                                                                                                                                                        la
+                                                                                                                                                                                                                                                                                        barre
+                                                                                                                                                                                                                                                                                        de
+                                                                                                                                                                                                                                                                                        navigation,
+                                                                                                                                                                                                                                                                                        Option,
+                                                                                                                                                                                                                                                                                        Parametre
+                                                                                                                                                                                                                                                                                        des
+                                                                                                                                                                                                                                                                                        mannette
+                                                                                                                                                                                                                                                                                        :
+                                                                                                                                                                                                                                                                                        donner
+                                                                                                                                                                                                                                                                                        un
+                                                                                                                                                                                                                                                                                        nom
+                                                                                                                                                                                                                                                                                        au
+                                                                                                                                                                                                                                                                                        profile
+                                                                                                                                                                                                                                                                                        puis
+                                                                                                                                                                                                                                                                                        dans
+                                                                                                                                                                                                                                                                                        "Emulated
+                                                                                                                                                                                                                                                                                        controller"
+                                                                                                                                                                                                                                                                                        mettre
+                                                                                                                                                                                                                                                                                        "Wii
+                                                                                                                                                                                                                                                                                        U
+                                                                                                                                                                                                                                                                                        GamePad"
+                                                                                                                                                                                                                                                                                        puis
+                                                                                                                                                                                                                                                                                        cliquer
+                                                                                                                                                                                                                                                                                        sur
+                                                                                                                                                                                                                                                                                        le
+                                                                                                                                                                                                                                                                                        plus
+                                                                                                                                                                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                                                                                                                                                                src="/img/tuto-cemu-gamepad.png"
+                                                                                                                                                                                                                                                                                                alt="">
+                                                                                                                                                                                                                                                                                            <p>34.
+                                                                                                                                                                                                                                                                                                Dans
+                                                                                                                                                                                                                                                                                                moteur,
+                                                                                                                                                                                                                                                                                                choisir
+                                                                                                                                                                                                                                                                                                "Keyboard"
+                                                                                                                                                                                                                                                                                                pour
+                                                                                                                                                                                                                                                                                                utiliser
+                                                                                                                                                                                                                                                                                                un
+                                                                                                                                                                                                                                                                                                clavier
+                                                                                                                                                                                                                                                                                                et
+                                                                                                                                                                                                                                                                                                choisir
+                                                                                                                                                                                                                                                                                                "XInput"
+                                                                                                                                                                                                                                                                                                pour
+                                                                                                                                                                                                                                                                                                choisir
+                                                                                                                                                                                                                                                                                                une
+                                                                                                                                                                                                                                                                                                manette
+                                                                                                                                                                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                                                                                                                                                                        src="/img/tuto-cemu-gamepad-choice.png"
+                                                                                                                                                                                                                                                                                                        alt="">
+                                                                                                                                                                                                                                                                                                    <p>35.
+                                                                                                                                                                                                                                                                                                        Dans
+                                                                                                                                                                                                                                                                                                        Manette,
+                                                                                                                                                                                                                                                                                                        choisir
+                                                                                                                                                                                                                                                                                                        le
+                                                                                                                                                                                                                                                                                                        peripherique
+                                                                                                                                                                                                                                                                                                        en
+                                                                                                                                                                                                                                                                                                        fonction
+                                                                                                                                                                                                                                                                                                        de
+                                                                                                                                                                                                                                                                                                        la
+                                                                                                                                                                                                                                                                                                        selection
+                                                                                                                                                                                                                                                                                                        dans
+                                                                                                                                                                                                                                                                                                        moteur.
+                                                                                                                                                                                                                                                                                                        Puis
+                                                                                                                                                                                                                                                                                                        Cliquer
+                                                                                                                                                                                                                                                                                                        sur
+                                                                                                                                                                                                                                                                                                        "Ajouter"
+                                                                                                                                                                                                                                                                                                        et
+                                                                                                                                                                                                                                                                                                        la
+                                                                                                                                                                                                                                                                                                        configuration
+                                                                                                                                                                                                                                                                                                        des
+                                                                                                                                                                                                                                                                                                        commande
+                                                                                                                                                                                                                                                                                                        se
+                                                                                                                                                                                                                                                                                                        fera
+                                                                                                                                                                                                                                                                                                        automatiquement
+
+                                                                                                                                                                                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                                                                                                                                                                                src="/img/tuto-cemu-gamepad-choice-2.png"
+                                                                                                                                                                                                                                                                                                                alt="">
+                                                                                                                                                                                                                                                                                                            <p>36.
+                                                                                                                                                                                                                                                                                                                Si
+                                                                                                                                                                                                                                                                                                                ce
+                                                                                                                                                                                                                                                                                                                n'est
+                                                                                                                                                                                                                                                                                                                pa
+                                                                                                                                                                                                                                                                                                                encore
+                                                                                                                                                                                                                                                                                                                fait
+                                                                                                                                                                                                                                                                                                                donner
+                                                                                                                                                                                                                                                                                                                un
+                                                                                                                                                                                                                                                                                                                nom
+                                                                                                                                                                                                                                                                                                                au
+                                                                                                                                                                                                                                                                                                                profile
+                                                                                                                                                                                                                                                                                                                et
+                                                                                                                                                                                                                                                                                                                cliquer
+                                                                                                                                                                                                                                                                                                                sur
+                                                                                                                                                                                                                                                                                                                sauvegarder
+
+                                                                                                                                                                                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                                                                                                                                                                                        src="/img/tuto-cemu-save.png"
+                                                                                                                                                                                                                                                                                                                        alt="">
+                                                                                                                                                                                                                                                                                                                    <p>37.
+                                                                                                                                                                                                                                                                                                                        (Optionnel)
+                                                                                                                                                                                                                                                                                                                        vous
+                                                                                                                                                                                                                                                                                                                        pouvez
+                                                                                                                                                                                                                                                                                                                        cliquer
+                                                                                                                                                                                                                                                                                                                        sur
+                                                                                                                                                                                                                                                                                                                        reglage
+                                                                                                                                                                                                                                                                                                                        pour
+                                                                                                                                                                                                                                                                                                                        avoir
+                                                                                                                                                                                                                                                                                                                        acces
+                                                                                                                                                                                                                                                                                                                        a
+                                                                                                                                                                                                                                                                                                                        d'autre
+                                                                                                                                                                                                                                                                                                                        parametre
+                                                                                                                                                                                                                                                                                                                        notament
+                                                                                                                                                                                                                                                                                                                        le
+                                                                                                                                                                                                                                                                                                                        possibilité
+                                                                                                                                                                                                                                                                                                                        de
+                                                                                                                                                                                                                                                                                                                        mettre
+                                                                                                                                                                                                                                                                                                                        le
+                                                                                                                                                                                                                                                                                                                        vibreur
+                                                                                                                                                                                                                                                                                                                        sur
+                                                                                                                                                                                                                                                                                                                        la
+                                                                                                                                                                                                                                                                                                                        manette
+
+                                                                                                                                                                                                                                                                                                                        <p><img class="img-fluid"
+                                                                                                                                                                                                                                                                                                                                src="/img/tuto-cemu-vibreur.png"
+                                                                                                                                                                                                                                                                                                                                alt="">
+                                                                                                                                                                                                                                                                                                                            <p
+                                                                                                                                                                                                                                                                                                                                id="Update">
+                                                                                                                                                                                                                                                                                                                                38.
+                                                                                                                                                                                                                                                                                                                                (Optionnel
+                                                                                                                                                                                                                                                                                                                                mais
+                                                                                                                                                                                                                                                                                                                                vivement
+                                                                                                                                                                                                                                                                                                                                conseillé)
+                                                                                                                                                                                                                                                                                                                                Dans
+                                                                                                                                                                                                                                                                                                                                la
+                                                                                                                                                                                                                                                                                                                                barre
+                                                                                                                                                                                                                                                                                                                                de
+                                                                                                                                                                                                                                                                                                                                navigation,
+                                                                                                                                                                                                                                                                                                                                cliquer
+                                                                                                                                                                                                                                                                                                                                sur
+                                                                                                                                                                                                                                                                                                                                "Fichier"
+                                                                                                                                                                                                                                                                                                                                puis
+                                                                                                                                                                                                                                                                                                                                sur
+                                                                                                                                                                                                                                                                                                                                "Installer
+                                                                                                                                                                                                                                                                                                                                un
+                                                                                                                                                                                                                                                                                                                                titre
+                                                                                                                                                                                                                                                                                                                                de
+                                                                                                                                                                                                                                                                                                                                je,
+                                                                                                                                                                                                                                                                                                                                une
+                                                                                                                                                                                                                                                                                                                                mise
+                                                                                                                                                                                                                                                                                                                                a
+                                                                                                                                                                                                                                                                                                                                jour
+                                                                                                                                                                                                                                                                                                                                ou
+                                                                                                                                                                                                                                                                                                                                un
+                                                                                                                                                                                                                                                                                                                                DLC"
+                                                                                                                                                                                                                                                                                                                                puis
+                                                                                                                                                                                                                                                                                                                                allez
+                                                                                                                                                                                                                                                                                                                                chercher
+                                                                                                                                                                                                                                                                                                                                le
+                                                                                                                                                                                                                                                                                                                                dossier
+                                                                                                                                                                                                                                                                                                                                de
+                                                                                                                                                                                                                                                                                                                                la
+                                                                                                                                                                                                                                                                                                                                mise
+                                                                                                                                                                                                                                                                                                                                a
+                                                                                                                                                                                                                                                                                                                                jour
+                                                                                                                                                                                                                                                                                                                                téléchargé
+                                                                                                                                                                                                                                                                                                                                avec
+                                                                                                                                                                                                                                                                                                                                USB
+                                                                                                                                                                                                                                                                                                                                Helper,
+                                                                                                                                                                                                                                                                                                                                puis
+                                                                                                                                                                                                                                                                                                                                dans
+                                                                                                                                                                                                                                                                                                                                meta
+                                                                                                                                                                                                                                                                                                                                et
+                                                                                                                                                                                                                                                                                                                                choisir
+                                                                                                                                                                                                                                                                                                                                "meta.xml"
+                                                                                                                                                                                                                                                                                                                                et
+                                                                                                                                                                                                                                                                                                                                enfin
+                                                                                                                                                                                                                                                                                                                                patienter
+                                                                                                                                                                                                                                                                                                                                un
+                                                                                                                                                                                                                                                                                                                                petit
+                                                                                                                                                                                                                                                                                                                                moment
+                                                                                                                                                                                                                                                                                                                                <p><img class="img-fluid"
+                                                                                                                                                                                                                                                                                                                                        src="/img/tuto-cemu-update.png"
+                                                                                                                                                                                                                                                                                                                                        alt="">
+                                                                                                                                                                                                                                                                                                                                    <p
+                                                                                                                                                                                                                                                                                                                                        id="DLC">
+                                                                                                                                                                                                                                                                                                                                        39.
+                                                                                                                                                                                                                                                                                                                                        Pour
+                                                                                                                                                                                                                                                                                                                                        installer
+                                                                                                                                                                                                                                                                                                                                        un
+                                                                                                                                                                                                                                                                                                                                        DLC;
+                                                                                                                                                                                                                                                                                                                                        parreil
+                                                                                                                                                                                                                                                                                                                                        mais
+                                                                                                                                                                                                                                                                                                                                        cette
+                                                                                                                                                                                                                                                                                                                                        fois
+                                                                                                                                                                                                                                                                                                                                        il
+                                                                                                                                                                                                                                                                                                                                        faut
+                                                                                                                                                                                                                                                                                                                                        aller
+                                                                                                                                                                                                                                                                                                                                        chercher
+                                                                                                                                                                                                                                                                                                                                        "meta.xml"
+                                                                                                                                                                                                                                                                                                                                        dans
+                                                                                                                                                                                                                                                                                                                                        le
+                                                                                                                                                                                                                                                                                                                                        dossier
+                                                                                                                                                                                                                                                                                                                                        des
+                                                                                                                                                                                                                                                                                                                                        DLC
+                                                                                                                                                                                                                                                                                                                                        téléchargé
+                                                                                                                                                                                                                                                                                                                                        avec
+                                                                                                                                                                                                                                                                                                                                        USB
+                                                                                                                                                                                                                                                                                                                                        Helper
+                                                                                                                                                                                                                                                                                                                                        <p>39.
+                                                                                                                                                                                                                                                                                                                                            Pour
+                                                                                                                                                                                                                                                                                                                                            connecter
+                                                                                                                                                                                                                                                                                                                                            une
+                                                                                                                                                                                                                                                                                                                                            manette
+                                                                                                                                                                                                                                                                                                                                            switch,
+                                                                                                                                                                                                                                                                                                                                            premierement
+                                                                                                                                                                                                                                                                                                                                            <p><img class="img-fluid"
+                                                                                                                                                                                                                                                                                                                                                    src="/img/tuto-cemu-update.png"
+                                                                                                                                                                                                                                                                                                                                                    alt="">
+                                                                                                                                                                                                                                                                                                                                            </p>
+                    </h2>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1 id="Yuzu">Yuzu</h1>
+                    <br><br><br>
+                    <img class="img-fluid" height="592" width="1292" src="/img/Yuzu_banniere.jpg"
+                        alt="Banniere pour CEMU">
+                    <br><br><br>
+                    <h2>
+                        <p>
+                            En cours de rédaction
+                        </p>
+                    </h2>
+
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h1 id="RetroArch">RetroArch</h1>
+                    <br><br><br>
+                    <img class="img-fluid" height="592" width="1292" src="/img/retroarch_banniere.png"
+                        alt="Banniere pour CEMU">
+                    <br><br><br>
+                    <h2>
+                        <p>
+                            En cour de rédaction
+                        </p>
+                    </h2>
+                </center>
+
+            </main>
+        </div>
+    </div>
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-DBjhmceckmzwrnMMrjI7BvG2FmRuxQVaTfFYHgfnrdfqMhxKt445b7j3KBQLolRl" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
+        integrity="sha384-EbSscX4STvYAC/DxHse8z5gEDaNiKAIGW+EpfzYTfQrgIlHywXXrM9SUIZ0BlyfF" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        integrity="sha384-i+dHPTzZw7YVZOx9lbH5l6lP74sLRtMtwN2XjVqjf3uAGAREAF4LMIUDTWEVs4LI" crossorigin="anonymous">
+    </script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.72.0">
+    <title>Tuto Emu</title>
+    <link rel="icon" type="image/x-icon" href="img/Logo-for-Tuto-Emu.png">
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6451224495941635"
+        crossorigin="anonymous">
+    </script>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+    <script src="js/Chat.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GB2PNZ4WGT"></script>
+
+</head>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GB2PNZ4WGT');
+</script>
+
+<body>
+
+    <header id="haut">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img height="30" width="30"
+                        src="img/Logo-for-Tuto-Emu.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/tuto.html">Tutoriel</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/resource.html">Resource</a>
+                        </li>
+
+                        <li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Communauté </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.reddit.com/r/TutoEmu/" target="_blank">
+                                        Reddit </a></li>
+                                <li><a class="dropdown-item" href="https://tutoemu.forumactif.com" target="_blank">
+                                        Forum </a></li>
+                                <li><a class="dropdown-item" href="https://discord.gg/PMCKug93PC"> Discord </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/feedback.html">Votre avis</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" /></svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1>Tuto Emu</h1>
+                            <p>L'ensemble de tutoriel sur tous les émulateur (ou presque)</p>
+                            <p><a class="btn btn-lg btn-primary" href="pages/tuto.html" role="button">Lire les
+                                    tutoriel</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" /></svg>
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Avec la communauté</h1>
+                            <p>Les tutoriel évolue avec la communauté.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">En savoir
+                                    plus</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" /></svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1>Fait avec le &#x2764;</h1>
+                            <p>Ce site a été fait avec le &#x2764; par des passionné d'informatique et d'emulation.</p>
+                            <p><a class="btn btn-lg btn-primary" href="pages/soutient.html" role="button">Nous
+                                    soutenir</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Qu'est que l'émulation <span class="text-muted">et un
+                            émulateur ?</span>
+                    </h2>
+                    <p class="lead">Un émulateur est un programme qui permet de simuler le fonctionnement d'une console
+                        sur
+                        ordinateur (ou sur mobile mais c'est plus rare). L'émulation est le fait de simuler une console
+                        <q><i>Image : logo CEMU, un émulateur pour la Nintendo
+                                WII U</i></q></p>
+                </div>
+                <div class="col-md-5">
+                    <img class="img-fluid" height="500" width="500" src="img/CEMU_logo.png" alt="CEMU Logo">
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Est-ce gratuit <span class="text-muted">ou payant ?</span></h2>
+                    <p class="lead">Dans 9 cas sur 10 c'est gratuit. on proposera toujours une solution gratuite ou très
+                        peu couteuse</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="img-fluid" height="500" width="500" src="img/argent.jpg" alt="Image argent">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Est-ce légal <span class="text-muted">ou pas.</span></h2>
+                    <p class="lead">C'est legal tant que vous ne piraté (téléchargé gratuitement sur internet par
+                        exemple) pas le jeux en question mais comme la plupart des émulateur emule (verbe du nom
+                        emulatrion) des console dont le developement a été abandonné donc vous n'aurez pas de porbleme
+                        pour ces émulateur</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="img-fluid" height="500" width="500" src="img/piratage.jpg" alt="Illustration piratage">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-right"><a class="btn btn-lg btn-primary" href="index.html#haut">Revenir en haut</a></p>
+            <p>&copy; 2017-2020 Tuto Emu
+                <!--&middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>-->
+        </footer>
+    </main>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg> -->
